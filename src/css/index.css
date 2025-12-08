@@ -1,0 +1,599 @@
+/* estilos.css - Nombres de clase de estudiante */
+
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabecera */
+.barra-superior {
+    background-color: #f5f5f5;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.contenido-barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selector-region {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.enlaces-superiores {
+    display: flex;
+    gap: 20px;
+}
+
+.enlaces-superiores a {
+    color: #666;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.enlaces-superiores a:hover {
+    color: #0066cc;
+}
+
+/* Navegación principal */
+.navegacion-principal {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+.contenido-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu-navegacion {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu-navegacion li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-navegacion li a:hover {
+    color: #0066cc;
+}
+
+.boton-menu-movil {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Sección Principal */
+.seccion-principal {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('/src/img/logo.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.titulo-principal {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.descripcion-principal {
+    font-size: 20px;
+    max-width: 800px;
+    margin-bottom: 30px;
+    color: #eee;
+}
+
+.acciones-principal {
+    display: flex;
+    gap: 20px;
+}
+
+/* Botones */
+.boton {
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton-primario {
+    background-color: #0066cc;
+    color: white;
+}
+
+.boton-primario:hover {
+    background-color: #0052a3;
+    transform: translateY(-2px);
+}
+
+.boton-secundario {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.boton-secundario:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Secciones comunes */
+.titulo-seccion {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.descripcion-seccion {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+/* Sección de Introducción */
+.seccion-introduccion {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cuadricula-estadisticas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.item-estadistica {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.item-estadistica:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.numero-estadistica {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.texto-estadistica {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Sección de Características */
+.seccion-caracteristicas {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.cuadricula-caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.tarjeta-caracteristica {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.tarjeta-caracteristica:hover {
+    transform: translateY(-10px);
+}
+
+.icono-caracteristica {
+    font-size: 40px;
+    color: #0066cc;
+    margin-bottom: 20px;
+}
+
+.titulo-caracteristica {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.descripcion-caracteristica {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.enlace-caracteristica {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.enlace-caracteristica:hover {
+    text-decoration: underline;
+}
+
+/* Sección de Creadores */
+.seccion-creadores {
+    padding: 80px 0;
+}
+
+.cuadricula-creadores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.tarjeta-creador {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-creador:hover {
+    transform: translateY(-10px);
+}
+
+.imagen-creador {
+    height: 250px;
+    overflow: hidden;
+}
+
+.imagen-creador img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.tarjeta-creador:hover .imagen-creador img {
+    transform: scale(1.05);
+}
+
+.info-creador {
+    padding: 25px;
+    text-align: center;
+}
+
+.nombre-creador {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.descripcion-creador {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.enlace-creador {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.enlace-creador:hover {
+    text-decoration: underline;
+}
+
+/* Sección de Contacto */
+.seccion-contacto {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.contenido-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.info-contacto {
+    margin-top: 30px;
+}
+
+.item-contacto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.item-contacto i {
+    font-size: 24px;
+    color: #0066cc;
+}
+
+.item-contacto h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.item-contacto p {
+    color: #666;
+}
+
+.formulario-contacto {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.formulario-contacto h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.grupo-formulario {
+    margin-bottom: 20px;
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+}
+
+/* Pie de Página */
+.pie-pagina {
+    background-color: #222;
+    color: #ddd;
+    padding: 60px 0 20px;
+}
+
+.contenido-pie {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.logo-pie img {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.descripcion-pie {
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.enlaces-sociales {
+    display: flex;
+    gap: 15px;
+}
+
+.enlaces-sociales a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.enlaces-sociales a:hover {
+    background-color: #0066cc;
+}
+
+.titulo-pie {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.enlaces-pie {
+    list-style: none;
+}
+
+.enlaces-pie li {
+    margin-bottom: 12px;
+}
+
+.enlaces-pie a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.enlaces-pie a:hover {
+    color: white;
+}
+
+.pie-inferior {
+    padding-top: 30px;
+    border-top: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.enlaces-inferiores {
+    display: flex;
+    gap: 25px;
+}
+
+.enlaces-inferiores a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.enlaces-inferiores a:hover {
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .cuadricula-caracteristicas,
+    .cuadricula-estadisticas,
+    .cuadricula-creadores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contenido-contacto,
+    .contenido-pie {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .titulo-principal {
+        font-size: 36px;
+    }
+    
+    .titulo-seccion {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-navegacion {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+    
+    .boton-menu-movil {
+        display: block;
+    }
+    
+    .acciones-principal {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .pie-inferior {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .enlaces-inferiores {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 576px) {
+    .cuadricula-caracteristicas,
+    .cuadricula-estadisticas,
+    .cuadricula-creadores {
+        grid-template-columns: 1fr;
+    }
+    
+    .seccion-principal {
+        padding: 60px 0;
+    }
+    
+    .titulo-principal {
+        font-size: 30px;
+    }
+    
+    .titulo-seccion {
+        font-size: 26px;
+    }
+    
+    .numero-estadistica {
+        font-size: 36px;
+    }
+}
