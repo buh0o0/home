@@ -103,7 +103,7 @@ body {
 /* Sección Principal */
 .seccion-principal {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('/src/img/logo.jpeg');
+                url('/logo.jpeg');
     background-size: cover;
     background-position: center;
     color: white;
