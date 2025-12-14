@@ -232,6 +232,12 @@ body {
     gap: 30px;
 }
 
+.cuadricula-caracteristicasM {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
 .tarjeta-caracteristica {
     background-color: white;
     padding: 30px;
@@ -253,6 +259,12 @@ body {
 
 .titulo-caracteristica {
     font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #222;
+}
+.titulo-caracteristicaM {
+    font-size: 42px;
     font-weight: 700;
     margin-bottom: 15px;
     color: #222;
@@ -596,4 +608,19 @@ body {
     .numero-estadistica {
         font-size: 36px;
     }
+}
+
+/*MAPA*/
+
+.map-responsive {
+  position: relative;
+  padding-bottom: 55%;
+  height: 0;
+  overflow: hidden;
+}
+.map-responsive iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
 }
